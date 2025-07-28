@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import pauls from "./assets/pauls.png";
+import menu from "./assets/menu.svg";
 
 const Navbar = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center px-5 py-4 w-full bg-cover bg-center bg-no-repeat relative z-[500]">
-      
+
       {/* Logo */}
       <div className="w-28 sm:w-36 md:w-48">
         <img src={pauls} alt="Paul's Biryani" className="w-full object-contain" />
@@ -67,23 +68,16 @@ const Navbar = () => {
 
       {/* Hamburger Icon for Mobile */}
       <div className="md:hidden">
+
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="text-white focus:outline-none"
         >
-          <svg
+          <img
+            src={mobileMenuOpen ? "close" : menu}
+            alt="menu toggle"
             className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            viewBox="0 0 24 24"
-          >
-            {mobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
+          />
         </button>
       </div>
 
