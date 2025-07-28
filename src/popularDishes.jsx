@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Star, Quote } from "lucide-react";
 import "./popularDishes.css";
 import slider from "./assets/slider.jpg";
 import slider2 from "./assets/slider2.jpg";
@@ -118,11 +117,7 @@ export default function App() {
 
             <section className="py-20 px-8 bg-[#F5EAD3] relative">
                 <div className="mx-auto relative">
-                    <div className="flex justify-center mb-12">
-                        <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center">
-                            <Quote className="w-8 h-8 text-white" />
-                        </div>
-                    </div>
+                    
 
                     <div className="absolute -left-14 top-1/4 hidden lg:block">
                         <img src={left} className="bg-transparent h-50 w-auto rounded-2xl"></img>
@@ -162,10 +157,10 @@ export default function App() {
                     <div className="bg-white rounded-full px-8 py-4 shadow-lg flex items-center space-x-4">
                         <div className="flex space-x-1">
                             {[...Array(5)].map((_, i) => (
-                                <Star
+                                <div
                                     key={i}
-                                    className="w-5 h-5 fill-yellow-400 text-yellow-400"
-                                />
+                                    className="w-5 h-5 fill-yellow-400 text-yellow-400">*
+                                </div>
                             ))}
                         </div>
                         <span className="text-gray-600 font-medium">

@@ -2,14 +2,15 @@ import React from "react";
 import "./ourStory.css";
 import pauls from "./assets/pauls.png";
 import whatsappIcon from './assets/whatsapp.svg'
-import { FaXTwitter } from 'react-icons/fa6';
+import twitter from "./assets/twitter.svg";
+import facebook from "./assets/facebook.svg";
+import instagram from "./assets/instagram.svg";
 import plate from './assets/plate.png';
 import phone from './assets/phone.png';
 import location from './assets/location.png';
 import home from './assets/home.png';
 import chef from './assets/chef.png';
 import shop from './assets/shop.jpg';
-import { Facebook, Instagram } from 'lucide-react';
 
 
 export default function OurStory() {
@@ -91,10 +92,10 @@ export default function OurStory() {
                     <img src={pauls} className="h-12  w-auto" alt="logo" />
                 </div>
                 <div className="flex gap-4 text-xl">
-                    <a href="https://www.facebook.com/people/The-Pauls-Biryani/100090422541042/"><button> <Facebook className="text-[#000000] cursor-pointer" /></button></a>
-                    <a href="https://www.instagram.com/thepaulsbiryani/?hl=en"><button><Instagram className="text-[#000000] cursor-pointer" /></button></a>
+                    <a href="https://www.facebook.com/people/The-Pauls-Biryani/100090422541042/"><button> <img src={facebook} className="text-[#000000] cursor-pointer" /></button></a>
+                    <a href="https://www.instagram.com/thepaulsbiryani/?hl=en"><button><img src={instagram} className="text-[#000000] cursor-pointer" /></button></a>
                     <a href="https://chat.whatsapp.com/E0f5krbPWhn9sCtYDAUrS4"><button><img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6 cursor-pointer" /></button></a>
-                    <a href="https://x.com/thepaulsbiryani"><button><FaXTwitter className="text-[#000000] cursor-pointer" /></button></a>
+                    <a href="https://x.com/thepaulsbiryani"><button><img src={twitter} className="text-[#000000] cursor-pointer" /></button></a>
                 </div>
 
             </div>
