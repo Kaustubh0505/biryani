@@ -1,11 +1,13 @@
 import React from 'react';
 import { useEffect, useState, useRef } from 'react';
-import pauls from './assets/pauls.png';
 import biryan from './assets/biryan.png';
 import delivery from './assets/delivery.png';
 import dining from './assets/dining.png';
 import packet from './assets/packet.png';
 import mainPage from "./assets/mainPage.jpg"
+import Navbar from "./navbar.jsx";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -62,24 +64,8 @@ export default function HomePage() {
     return (
         <div className="font-[Montserrat] bg-[#fff4e3] min-h-screen">
             {/* Header */}
-            <div className="flex justify-between relative bg-none w-[100%] z-[500]  items-center px-10 py-5">
-                <div className="font-bold w-50 object-contain text-[#f1533a] text-lg">
-                    <img src={pauls}></img>
-                </div>
-                <div>
 
-                    <ul className="flex gap-8 text-sm font-semibold">
-                        <li><a href="#" className="text-black">HOME</a></li>
-                        <li><a href="#" className="text-black">MENU</a></li>
-                        <li><a href="#" className="text-black">STORY</a></li>
-                        <li><a href="#" className="text-black">GALLERY</a></li>
-                        <li><a href="#" className="text-black">CONTACT US</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <button className="bg-[#f1533a] text-white px-4 py-2 rounded-full font-bold">ORDER NOW</button>
-                </div>
-            </div>
+            <Navbar/>
 
             <div className="relative translate-y-[-87px] mx-auto">
                 <img
